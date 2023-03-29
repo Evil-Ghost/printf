@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Script to compile all c files in the current folder
+## Usage: ./compile
+
+gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c -o printf
