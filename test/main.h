@@ -20,20 +20,20 @@ typedef struct call
 	int (*f)(char *, va_list, int);
 } call_t;
 int _printf(const char *format, ...);
-int buff_append(char *buff_dest, va_list arg, int buff_count, char type);
+int buff_append(char *buff_dest, va_list ap, int buff_count, char type);
 int print_buff(char *buff, unsigned int nbuff);
 int str_len(char *s);
 char *_strcpy(char *dest, char *src);
-int parse_char(char *buff_dest, va_list arg, int buff_count);
-int parse_str(char *buff_dest, va_list arg, int buff_count);
-int parse_int(char *buff_dest, va_list list, int buff_count);
-int parse_perc(char *buff_dest, va_list arg, int buff_count);
-int parse_bin(char *buff_dest, va_list arg, int buff_count);
-int parse_oct(char *buff_dest, va_list arg, int buff_count);
-int parse_hex(char *buff_dest, va_list arg, int buff_count);
-int parse_X(char *buff_dest, va_list arg, int buff_count);
-int parse_uint(char *buff_dest, va_list arg, int buff_count);
-int parse_rev(char *buff_dest, va_list arg, int buff_count);
-int parse_R13(char *buff_dest, va_list arg, int buff_count);
+int char_prt(char *buff_dest, va_list ap, int buff_count);
+int str_prt(char *buff_dest, va_list ap, int buff_count);
+int int_prt(char *buff_dest, va_list list, int buff_count);
+int per_prt(char *buff_dest, va_list ap, int buff_count);
+int bin_prt(char *buff_dest, va_list ap, int buff_count);
+int oct_prt(char *buff_dest, va_list ap, int buff_count);
+int parse_hex(char *buff_dest, va_list ap, int buff_count);
+int prt_X(char *buff_dest, va_list ap, int buff_count);
+int ut_prt(char *buff_dest, va_list ap, int buff_count);
+int rev1_prt(char *buff_dest, va_list ap, int buff_count);
+int Rev_prt(char *buff_dest, va_list ap, int buff_count);
 
 #endif

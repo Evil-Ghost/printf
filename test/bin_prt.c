@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * parse_bin - substitute %b by unsigned int argument number
+ * bin_prt - substitute %b by unsigned int argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
  * @buff_count: index of buffer where the b of %b is
  * Return: New index
  */
-int parse_bin(char *buff_dest, va_list ap, int buff_count)
+int bin_prt(char *buff_dest, va_list ap, int buff_count)
 {
 	unsigned int number = va_ap(ap, unsigned int);
 	unsigned int tmp = number;

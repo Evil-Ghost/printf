@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * parse_perc - returns the character
+ * per_prt - returns the character
  * @buff_dest: character
  * @arg: list of arguments
  * @buff_count: index of buffer pointer
  * Return: the buffer index
  */
-int parse_perc(char *buff_dest, va_list arg, int buff_count)
+int per_prt(char *buff_dest, va_list ap, int buff_count)
 {
-	char c = va_arg(arg, int);
+	char c = va_ap(ap, int);
 
 	/* reassigned due to unexpected behaviour */
 	c = '%';

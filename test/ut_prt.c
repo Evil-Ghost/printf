@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * parse_str - writes the string
+ * ut_prt - writes the string
  * @buff_dest: character string
  * @arg: list of arguments
  * @buff_count: index f buffer pointer
  * Return: The number of characters printed.
  */
-int parse_str(char *buff_dest, va_list arg, int buff_count)
+int ut_prt(char *buff_dest, va_list ap, int buff_count)
 {
 	char *str;
 	int i = 0;
 
-	str = va_arg(arg, char *);
+	str = va_ap(ap, char *);
 	if (str == NULL)
 		str = "(null)";
 

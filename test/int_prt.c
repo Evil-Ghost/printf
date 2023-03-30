@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * parse_int - substitute %i by argument number
+ * int_prt - substitute %i by argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
  * @buff_count: index of dst where the c of %c is
  * Return: New index
  */
-int parse_int(char *buff_dest, va_list ap, int buff_count)
+int int_prt(char *buff_dest, va_list ap, int buff_count)
 {
 	int tens = 1;
 	unsigned int tmp;
 	int number;
 
-	number = va_arg(arg, int);
+	number = va_ap(ap, int);
 
 	if (number < 0)
 	{
