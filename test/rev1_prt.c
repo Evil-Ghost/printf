@@ -11,7 +11,7 @@ int rev1_prt(char *buff_dest, va_list ap, int buff_count)
 	int i = 0;
 	char *str;
 
-	str = va_ap(ap, char *);
+	str = va_arg(ap, char *);
 	if (str)
 	{
 		while (str[i] != '\0')

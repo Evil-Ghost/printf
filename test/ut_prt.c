@@ -12,7 +12,7 @@ int ut_prt(char *buff_dest, va_list ap, int buff_count)
 	char *str;
 	int i = 0;
 
-	str = va_ap(ap, char *);
+	str = va_arg(ap, char *);
 	if (str == NULL)
 		str = "(null)";
 

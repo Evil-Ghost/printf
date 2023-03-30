@@ -14,10 +14,10 @@ int _printf(const char *format, ...)
 	va_list ap;
 	call_t container[] = 
 	{
-		{'c', parse_char}, {'s', parse_str}, {'i', parse_int}, {'d', parse_int},
-		{'%', parse_perc}, {'b', parse_bin}, {'o', parse_oct}, {'x', parse_hex},
-		{'X', parse_X}, {'u', parse_uint}, {'R', parse_R13}, {'r', parse_rev},
-		{'\0', NULL}
+		{'c', char_prt}, {'s', str_prt}, {'i', int_prt}, {'d', int_prt},
+                {'%', per_prt}, {'b', bin_prt}, {'o', oct_prt}, {'x', parse_hex},
+                {'X', prt_X}, {'u', ut_prt}, {'R', Rev_prt}, {'r', rev1_prt},
+                {'\0', NULL}	
 	}
 
 	if (!format)

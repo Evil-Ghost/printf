@@ -9,7 +9,7 @@
  */
 int char_prt(char *buff_dest, va_list ap, int buff_count)
 {
-	char c = va_ap(ap, int);
+	char c = va_arg(ap, int);
 
 	buff_dest[buff_count] = c;
 

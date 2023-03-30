@@ -13,7 +13,7 @@ int int_prt(char *buff_dest, va_list ap, int buff_count)
 	unsigned int tmp;
 	int number;
 
-	number = va_ap(ap, int);
+	number = va_arg(ap, int);
 
 	if (number < 0)
 	{

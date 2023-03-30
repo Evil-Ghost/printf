@@ -9,7 +9,7 @@
  */
 int oct_prt(char *buff_dest, va_list ap, int buff_count)
 {
-	unsigned int number = va_ap(ap, unsigned int);
+	unsigned int number = va_arg(ap, unsigned int);
 	unsigned int tmp = number;
 	int octs = 1;
 
