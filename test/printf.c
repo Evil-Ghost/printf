@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
                 {'%', per_prt}, {'b', bin_prt}, {'o', oct_prt}, {'x', parse_hex},
                 {'X', prt_X}, {'u', ut_prt}, {'R', Rev_prt}, {'r', rev1_prt},
                 {'\0', NULL}	
-	}
+	};
 
 	if (!format)
 		return (-1);
